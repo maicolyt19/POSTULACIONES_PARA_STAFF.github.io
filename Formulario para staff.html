@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Postulación para Moderador</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #2e2e2e;
+            color: #fff;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #1e1e1e;
+            border-radius: 10px;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-bottom: 5px;
+        }
+        input, textarea {
+            margin-bottom: 15px;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+        }
+        input[type="submit"] {
+            background-color: #d31d1d;
+            color: white;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        input[type="submit"]:hover {
+            background-color: #a81616;
+        }
+        .disclaimer {
+            font-size: 12px;
+            color: #bbb;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Formulario de Postulación para Moderador</h1>
+        <h2>★彡[𝑁𝐹𝑆𝑊 ® 𝐹𝐴𝑁𝑇𝐴𝑆𝑌 ® 𝑆𝑂𝐶𝐼𝐸𝑇𝑌 🫀]彡★</h2>
+        <form action="mailto:maicoldavidmirsantana@gmail.com" method="post" enctype="text/plain">
+            <label for="name">Nombre o Nickname:</label>
+            <input type="text" id="name" name="Nombre" required>
+
+            <label for="age">Edad (18+):</label>
+            <input type="number" id="age" name="Edad" required min="18">
+
+            <label for="country">País y Zona Horaria:</label>
+            <input type="text" id="country" name="País y Zona Horaria" required>
+
+            <label for="discord">Usuario de Discord (ej. Usuario#1234):</label>
+            <input type="text" id="discord" name="Usuario de Discord" required>
+
+            <label for="experience">¿Tienes experiencia previa como moderador?</label>
+            <textarea id="experience" name="Experiencia" rows="4" required></textarea>
+
+            <label for="tools">¿Conoces las herramientas de moderación (ej. bots, roles)?</label>
+            <textarea id="tools" name="Herramientas de Moderación" rows="4" required></textarea>
+
+            <label for="conflict">¿Cómo manejarías un conflicto entre miembros?</label>
+            <textarea id="conflict" name="Manejo de Conflictos" rows="4" required></textarea>
+
+            <label for="why">¿Por qué te interesa ser moderador en este servidor?</label>
+            <textarea id="why" name="Motivación" rows="4" required></textarea>
+
+            <label for="contribution">¿Qué puedes aportar al servidor?</label>
+            <textarea id="contribution" name="Aportación" rows="4" required></textarea>
+
+            <label for="comfort">¿Te sientes cómodo moderando contenido NSFW?</label>
+            <textarea id="comfort" name="Confort NSFW" rows="4" required></textarea>
+
+            <label for="security">¿Cómo asegurarías el respeto y la seguridad en el servidor?</label>
+            <textarea id="security" name="Seguridad y Respeto" rows="4" required></textarea>
+
+            <label for="infractions">¿Qué harías si un usuario publica contenido que infringe las reglas?</label>
+            <textarea id="infractions" name="Infracciones" rows="4" required></textarea>
+
+            <label for="underage">¿Qué harías si descubres que un miembro es menor de edad?</label>
+            <textarea id="underage" name="Menores de Edad" rows="4" required></textarea>
+
+            <label for="harassment">¿Cómo manejarías un reporte de acoso por mensajes privados?</label>
+            <textarea id="harassment" name="Manejo de Acoso" rows="4" required></textarea>
+
+            <label for="hours">¿Cuántas horas a la semana puedes dedicar al servidor?</label>
+            <input type="text" id="hours" name="Disponibilidad Horaria" required>
+
+            <label for="meetings">¿Estás dispuesto a asistir a reuniones con otros moderadores?</label>
+            <input type="text" id="meetings" name="Disponibilidad para Reuniones" required>
+
+            <input type="submit" value="Enviar Postulación">
+        </form>
+        <p class="disclaimer">Nada de esta información será utilizada para beneficio propio o difundida.</p>
+    </div>
+</body>
+</html>
